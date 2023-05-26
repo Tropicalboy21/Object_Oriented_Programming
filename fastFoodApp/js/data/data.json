@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "name": "burger",
+            "price": 8,
+            "image": "imgs/burger.png"
+        },
+        {
+            "name": "chicken",
+            "price": 7,
+            "image": "imgs/chicken.png"
+        },
+        {
+            "name": "coke",
+            "price": 5,
+            "image": "imgs/coke.png"
+        },
+        {
+            "name": "crossand",
+            "price": 4,
+            "image": "imgs/crossand.png"
+        },
+        {
+            "name": "taco",
+            "price": 6,
+            "image": "imgs/taco.png"
+        }
+    ]
+}
