@@ -7,6 +7,11 @@ window.addEventListener('load', init, false);
 function init() {
     var productsContainer = document.getElementById('productsContainer');
 
+    var payButton = document.getElementById('doneButton')
+
+    payButton.innerHTML = "Pay";
+    payButton.onclick = onBuyButton
+
     var products = [];
     loadData();
 
@@ -43,7 +48,7 @@ function init() {
 
             var price = document.createElement('p');
             price.className = 'product_price';
-            price.innerHTML = product.price;
+            price.innerHTML = '$' + product.price;
             container.appendChild(price);
 
             var image = document.createElement('img');
@@ -62,5 +67,10 @@ function init() {
 
     function onAddbutton(event) {
         console.log('onAddButton', event);
+    }
+
+
+    function onBuyButton(event) {
+        console.log('onBuyButton', event);
     }
 }
