@@ -1,21 +1,21 @@
 "use strict";
 
 import { Product } from "./model/product.js";
+import { ProductView } from "./view/ProductView.js";
 
 window.addEventListener('load', init, false);
 
 function init() {
     var productsContainer = document.getElementById('productsContainer');
-
-    var payButton = document.getElementById('doneButton')
-
+    var payButton = document.getElementById('doneButton');
+    var headerTotal = document.getElementById('headerTotal');
     payButton.innerHTML = "Pay";
-    payButton.onclick = onBuyButton
-
     var products = [];
+    var selectedProducts = [];
     loadData();
 
     function loadData() {
+
         var request = new XMLHttpRequest();
         request.open('GET', 'js/data/data.json');
         request.onload = function () {
@@ -24,7 +24,7 @@ function init() {
             var data = jsonData.data;
 
             data.forEach(productData => {
-                var product = new Product(productData.name, productData.price, productData.image);
+                var product = new Product(productData.id, productData.name, productData.price, productData.image, productData.quantity);
                 products.push(product);
 
             });
@@ -37,40 +37,48 @@ function init() {
 
     function showProducts() {
         products.forEach(product => {
-            var container = document.createElement('div');
-            container.className = "product_container";
-            productsContainer.appendChild(container);
-
-            var title = document.createElement('p');
-            title.className = 'product_title';
-            title.innerHTML = product.name;
-            container.appendChild(title);
-
-            var price = document.createElement('p');
-            price.className = 'product_price';
-            price.innerHTML = '$' + product.price;
-            container.appendChild(price);
-
-            var image = document.createElement('img');
-            image.className = 'product_image';
-            image.src = product.image;
-            container.appendChild(image);
-
-            var addButton = document.createElement('div');
-            addButton.className = 'product_add_button';
-            addButton.innerHTML = 'ADD';
-            container.appendChild(addButton);
-            addButton.onclick = onAddbutton;
-
+            var productView = new ProductView(productsContainer, product, addSelectedProduct);
         });
     }
 
-    function onAddbutton(event) {
+    function onAddButton(event) {
         console.log('onAddButton', event);
     }
 
+    function addSelectedProduct(product) {
 
-    function onBuyButton(event) {
-        console.log('onBuyButton', event);
+        let productIndex = selectedProducts.findIndex((element => element.id === product.id))
+
+        if (!selectedProducts.includes(product)) {
+            selectedProducts.push(product);
+        } else if (selectedProducts.includes(product)) {
+            selectedProducts[productIndex].quantity += 1;
+        }
+
+        showSelectedProducts();
+
+        console.log(selectedProducts)
+        console.log(product.id);
+    }
+
+    function showSelectedProducts() {
+
+        listContainer.innerHTML = '';
+        var total = 0;
+
+        selectedProducts.forEach(product => {
+
+
+            var p = document.createElement('p');
+            p.innerHTML = product.quantity + ' ' + product.name + ' ' + '$' + (product.price * product.quantity);
+            p.className = 'list_product';
+            listContainer.appendChild(p);
+            total += (product.price * product.quantity);
+
+
+        });
+
+        headerTotal.innerHTML = `Total: $${total}`
     }
 }
+
