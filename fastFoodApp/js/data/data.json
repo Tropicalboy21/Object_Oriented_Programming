@@ -1,29 +1,102 @@
 {
     "data": [
         {
-            "name": "burger",
+            "id": 1,
+            "name": "Burger",
             "price": 8,
-            "image": "imgs/burger.png"
+            "image": "imgs/burger.png",
+            "quantity": 1
         },
         {
-            "name": "chicken",
+            "id": 2,
+            "name": "Chicken",
             "price": 7,
-            "image": "imgs/chicken.png"
+            "image": "imgs/chicken.png",
+            "quantity": 1
         },
         {
-            "name": "coke",
+            "id": 3,
+            "name": "Coke",
             "price": 5,
-            "image": "imgs/coke.png"
+            "image": "imgs/coke.png",
+            "quantity": 1
         },
         {
-            "name": "crossand",
+            "id": 4,
+            "name": "Crossand",
             "price": 4,
-            "image": "imgs/crossand.png"
+            "image": "imgs/crossand.png",
+            "quantity": 1
         },
         {
-            "name": "taco",
+            "id": 5,
+            "name": "Taco",
             "price": 6,
-            "image": "imgs/taco.png"
+            "image": "imgs/taco.png",
+            "quantity": 1
+        },
+        {
+            "id": 6,
+            "name": "Donut",
+            "price": 9,
+            "image": "imgs/donuts.png",
+            "quantity": 1
+        },
+        {
+            "id": 7,
+            "name": "Dumplins",
+            "price": 11,
+            "image": "imgs/dumplins.png",
+            "quantity": 1
+        },
+        {
+            "id": 8,
+            "name": "Fries",
+            "price": 10,
+            "image": "imgs/fries.png",
+            "quantity": 1
+        },
+        {
+            "id": 9,
+            "name": "Hotdog",
+            "price": 12,
+            "image": "imgs/hotdog.png",
+            "quantity": 1
+        },
+        {
+            "id": 10,
+            "name": "IceCream",
+            "price": 5,
+            "image": "imgs/iceCream.png",
+            "quantity": 1
+        },
+        {
+            "id": 11,
+            "name": "Pizza",
+            "price": 22,
+            "image": "imgs/pizza.png",
+            "quantity": 1
+        },
+        {
+            "id": 12,
+            "name": "Sandwich",
+            "price": 14,
+            "image": "imgs/sandwich.png",
+            "quantity": 1
+        },
+        {
+            "id": 13,
+            "name": "Shake",
+            "price": 14,
+            "image": "imgs/shake.png",
+            "quantity": 1
+        },
+        {
+            "id": 14,
+            "name": "Sushi",
+            "price": 15,
+            "image": "imgs/sushi.png",
+            "quantity": 1
         }
     ]
 }
