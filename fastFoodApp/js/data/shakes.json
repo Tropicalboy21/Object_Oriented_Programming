@@ -1,0 +1,116 @@
+{
+    "data": [
+        {
+            "id": 16,
+            "name": "Banana",
+            "price": 14,
+            "image": "imgs/banana.png",
+            "quantity": 1
+        },
+        {
+            "id": 17,
+            "name": "BlueBerry",
+            "price": 14,
+            "image": "imgs/blueBerry.png",
+            "quantity": 1
+        },
+        {
+            "id": 18,
+            "name": "Carrot",
+            "price": 14,
+            "image": "imgs/carrot.png",
+            "quantity": 1
+        },
+        {
+            "id": 19,
+            "name": "Chai",
+            "price": 14,
+            "image": "imgs/chai.png",
+            "quantity": 1
+        },
+        {
+            "id": 20,
+            "name": "Cherry",
+            "price": 14,
+            "image": "imgs/cherry.png",
+            "quantity": 1
+        },
+        {
+            "id": 21,
+            "name": "Chocolate",
+            "price": 14,
+            "image": "imgs/chocolate.png",
+            "quantity": 1
+        },
+        {
+            "id": 22,
+            "name": "Cooffe",
+            "price": 14,
+            "image": "imgs/cooffe.png",
+            "quantity": 1
+        },
+        {
+            "id": 23,
+            "name": "Cucumber",
+            "price": 14,
+            "image": "imgs/cucumber.png",
+            "quantity": 1
+        },
+        {
+            "id": 24,
+            "name": "fruits",
+            "price": 14,
+            "image": "imgs/fruits.png",
+            "quantity": 1
+        },
+        {
+            "id": 25,
+            "name": "Lemon",
+            "price": 14,
+            "image": "imgs/lemon.png",
+            "quantity": 1
+        },
+        {
+            "id": 26,
+            "name": "Orange",
+            "price": 14,
+            "image": "imgs/orange.png",
+            "quantity": 1
+        },
+        {
+            "id": 27,
+            "name": "Oreo",
+            "price": 14,
+            "image": "imgs/oreo.png",
+            "quantity": 1
+        },
+        {
+            "id": 28,
+            "name": "Oreo",
+            "price": 14,
+            "image": "imgs/oreo.png",
+            "quantity": 1
+        },
+        {
+            "id": 29,
+            "name": "Pineapple",
+            "price": 14,
+            "image": "imgs/pineapple.png",
+            "quantity": 1
+        },
+        {
+            "id": 30,
+            "name": "Strawberry",
+            "price": 14,
+            "image": "imgs/strawberry.png",
+            "quantity": 1
+        },
+        {
+            "id": 31,
+            "name": "Vanilla",
+            "price": 14,
+            "image": "imgs/vanilla.png",
+            "quantity": 1
+        }
+    ]
+}
